@@ -114,12 +114,8 @@ int main(void)
 
   while (1)
   {
-    /* USER CODE END WHILE */
-    snprintf(msgBuf, MSGBUFSIZE, "%s", "In loop!\r\n");
-    HAL_UART_Transmit(&huart2, (uint8_t *)msgBuf, strlen(msgBuf), HAL_MAX_DELAY);
     led1.toggle();
     HAL_Delay(1000);
-    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
