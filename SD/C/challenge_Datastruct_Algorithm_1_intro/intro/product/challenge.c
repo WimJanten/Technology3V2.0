@@ -1,5 +1,4 @@
 #include "challenge.h"
-#include <stddef.h>
 
 int FindSmallestNumberThatIsRepeatedKTimes(
             int* array, int size, int k, int* smallestNumber)
@@ -96,7 +95,6 @@ int ComputeDifferenceBetweenMaxAndMinSumOfKElements_BubbleSort(
     return 0;
 }
 
-//write a function that sorts the array using quicksort
 int Quicksort(int* array, int left, int right)
 {
     if(array == NULL || left < 0 || right < 0){
@@ -184,10 +182,4 @@ int ComputeDifferenceBetweenMaxAndMinSumOfKElements_SelectionSort(
         return -1;
     }
     return 0;
-}
-
-int ComputeDifferenceBetweenMaxAndMinSumOfKElements_3(
-            int* array, int size, int k, int* difference)
-{
-    return -1;
 }
